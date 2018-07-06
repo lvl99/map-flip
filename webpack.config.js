@@ -3,10 +3,10 @@ const path = require("path");
 module.exports = {
   name: "map-flip",
   mode: "production",
-  entry: path.normalize(__dirname, "src/map-flip.js"),
+  entry: path.normalize(__dirname, "src/index.js"),
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "map-flip.js"
+    path: path.resolve(__dirname, "es5"),
+    filename: "index.js"
   },
   module: {
     rules: [
