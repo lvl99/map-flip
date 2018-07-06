@@ -1,0 +1,31 @@
+{
+  "name": "map-flip",
+  "version": "1.0.0",
+  "description": "Flip a Map's keys and values around (for fun and profit!)",
+  "main": "index.js",
+  "browser": "./es5/index.js",
+  "module": "./src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack"
+  },
+  "author": "Matt Scheurich <matt@lvl99.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.52",
+    "@babel/preset-env": "^7.0.0-beta.52",
+    "babel-cli": "^6.26.0",
+    "babel-jest": "^23.2.0",
+    "babel-loader": "^8.0.0-beta",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.3.0",
+    "regenerator-runtime": "^0.12.0",
+    "webpack": "^4.15.1",
+    "webpack-command": "^0.4.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "babel-jest"
+    }
+  }
+}
