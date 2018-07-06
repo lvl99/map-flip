@@ -1,10 +1,10 @@
 {
   "name": "map-flip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Flip a Map's keys and values around (for fun and profit!)",
   "main": "index.js",
   "browser": "./es5/index.js",
-  "module": "./src/index.js",
+  "module": "index.js",
   "scripts": {
     "test": "jest",
     "build": "webpack"
