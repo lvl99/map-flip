@@ -2,7 +2,7 @@
 
 Flip a Map's keys and values around (for fun and profit!):
 
-```
+```javascript
   import mapFlip from "map-flip";
 
   const exampleMap = new Map([
