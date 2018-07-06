@@ -9,6 +9,10 @@
     "test": "jest",
     "build": "webpack"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lvl99/map-flip.git"
+  },
   "author": "Matt Scheurich <matt@lvl99.com>",
   "license": "MIT",
   "devDependencies": {
