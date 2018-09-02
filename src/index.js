@@ -4,7 +4,7 @@
  * @param {Map} map
  * @returns {Map}
  */
-export function mapFlip(map) {
+function mapFlip(map) {
   const flipped = [];
   map.forEach((value, key) => {
     flipped.push([value, key]);
@@ -12,4 +12,4 @@ export function mapFlip(map) {
   return new Map(flipped);
 }
 
-export default mapFlip;
+module.exports = mapFlip;

@@ -1,12 +1,19 @@
 const path = require("path");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 
 module.exports = {
   name: "map-flip",
-  mode: "production",
-  entry: path.normalize(__dirname, "index.js"),
+  mode: "development",
+  entry: {
+    "map-flip": path.normalize(__dirname, "src/index.js"),
+    "map-flip.min": path.normalize(__dirname, "src/index.js")
+  },
   output: {
-    path: path.resolve(__dirname, "es5"),
-    filename: "index.js"
+    path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
+    library: "mapFlip",
+    libraryTarget: "umd",
+    umdNamedDefine: true
   },
   module: {
     rules: [
@@ -20,6 +27,14 @@ module.exports = {
           }
         }
       }
+    ]
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new UglifyJsPlugin({
+        include: /\.min\./
+      })
     ]
   }
 };

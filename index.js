@@ -1,3 +1,2 @@
-import mapFlip from "./lib/map-flip";
-
-export default mapFlip;
+const mapFlip = require("./src");
+module.exports = mapFlip;

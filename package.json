@@ -1,9 +1,9 @@
 {
   "name": "map-flip",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Flip a Map's keys and values around (for fun and profit!)",
-  "main": "index.js",
-  "browser": "./es5/index.js",
+  "main": "dist/map-flip.js",
+  "module": "src/index.js",
   "scripts": {
     "test": "jest",
     "build": "webpack"
@@ -15,16 +15,17 @@
   "author": "Matt Scheurich <matt@lvl99.com>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.52",
-    "@babel/preset-env": "^7.0.0-beta.52",
-    "babel-cli": "^6.26.0",
-    "babel-jest": "^23.2.0",
-    "babel-loader": "^8.0.0-beta",
-    "babel-preset-env": "^1.7.0",
-    "jest": "^23.3.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^23.4.2",
+    "babel-loader": "^8.0.0",
+    "jest": "^23.5.0",
     "regenerator-runtime": "^0.12.0",
-    "webpack": "^4.15.1",
-    "webpack-command": "^0.4.0"
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "webpack": "^4.17.1",
+    "webpack-command": "^0.4.1"
   },
   "jest": {
     "transform": {

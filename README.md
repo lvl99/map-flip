@@ -37,12 +37,16 @@ Require or import into your file:
 ```javascript
   // ES5
   // no transpilation required
-  var mapFlip = require("map-flip/es5")
+  var mapFlip = require("map-flip")
 
   // ES6
-  // transpilation is required!
-  import mapFlip from "map-flip"
+  // no transpilation required
   const mapFlip = require("map-flip")
+  import mapFlip from "map-flip"
+
+  // transpilation is required!
+  const mapFlip = require("map-flip/src")
+  import mapFlip from "map-flip/src"
 ```
 
 ## Contribute
