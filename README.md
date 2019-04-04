@@ -7,6 +7,7 @@ import mapFlip from "map-flip";
 
 const exampleMap = new Map([[0, "First"], [1, "Second"], [2, "Third"]]);
 
+// Do a map flip!
 const exampleFlipped = mapFlip(testMap);
 
 /*
