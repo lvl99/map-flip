@@ -1,19 +1,15 @@
-# Map Flip
+# 🗺🔁 Map Flip
 
 Flip a Map's keys and values around (for fun and profit!):
 
 ```javascript
-  import mapFlip from "map-flip";
+import mapFlip from "map-flip";
 
-  const exampleMap = new Map([
-    [0, "First"],
-    [1, "Second"],
-    [2, "Third"]
-  ]);
+const exampleMap = new Map([[0, "First"], [1, "Second"], [2, "Third"]]);
 
-  const exampleFlipped = mapFlip(testMap);
+const exampleFlipped = mapFlip(testMap);
 
-  /*
+/*
     exampleFlipped: Map = [
       ["First", 0],
       ["Second", 1],
@@ -27,26 +23,16 @@ was pretty cool. This function does something similar but for maps.
 
 ## Install
 
-Use `npm` or `yarn` — whichever your preference:
 ```sh
   npm i map-flip
   yarn add map-flip
 ```
 
 Require or import into your file:
+
 ```javascript
-  // ES5
-  // no transpilation required
-  var mapFlip = require("map-flip")
-
-  // ES6
-  // no transpilation required
-  const mapFlip = require("map-flip")
-  import mapFlip from "map-flip"
-
-  // transpilation is required!
-  const mapFlip = require("map-flip/src")
-  import mapFlip from "map-flip/src"
+const mapFlip = require("map-flip");
+import mapFlip from "map-flip/src";
 ```
 
 ## Contribute
@@ -54,18 +40,21 @@ Require or import into your file:
 Feel free if there's anything else to add.
 
 Install developer dependencies:
+
 ```sh
-  yarn
+  npm i
 ```
 
 Test:
+
 ```sh
-  yarn test
+  npm test
 ```
 
 Build:
+
 ```sh
-  yarn build
+  npm build
 ```
 
 ## License

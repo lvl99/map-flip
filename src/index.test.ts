@@ -1,7 +1,11 @@
-import mapFlip from "./";
+import mapFlip from ".";
 
 test("Do a map flip!", () => {
-  const testMap = new Map([[0, "First"], [1, "Second"], [2, "Third"]]);
+  const testMap: Map<number, string> = new Map([
+    [0, "First"],
+    [1, "Second"],
+    [2, "Third"]
+  ]);
   const flippedTestMap = mapFlip(testMap);
 
   expect(flippedTestMap).toBeInstanceOf(Map);
