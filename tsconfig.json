@@ -11,24 +11,16 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "outDir": "dist/mjs",
-    "sourceMap": true
+    "outDir": "dist",
+    "sourceMap": true,
+    "emitDeclarationOnly": true
   },
   "include": [
-    "index.ts",
-    "src/**/*.ts"
+    "src/mapFlip.ts"
   ],
   "exclude": [
     "node_modules",
     "src/**/*.test.ts",
     "dist"
-  ],
-  "references": [
-    {
-      "path": "tsconfig.commonjs.json"
-    },
-    {
-      "path": "tsconfig.mjs.json"
-    }
   ]
 }

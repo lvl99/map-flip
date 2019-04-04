@@ -1,4 +1,4 @@
-import mapFlip from ".";
+import mapFlip from "./mapFlip";
 
 test("Do a map flip!", () => {
   const testMap: Map<number, string> = new Map([

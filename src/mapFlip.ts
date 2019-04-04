@@ -4,10 +4,12 @@
  * @param {Map} map
  * @returns {Map}
  */
-export default function mapFlip<K, V>(map: Map<K, V>): Map<V, K> {
+export function mapFlip<K, V>(map: Map<K, V>): Map<V, K> {
   const flipped: [V, K][] = [];
   map.forEach((value, key) => {
     flipped.push([value, key]);
   });
   return new Map(flipped);
 }
+
+export default mapFlip;
