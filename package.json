@@ -4,7 +4,7 @@
   "description": "Flip a Map's keys and values around (for fun and profit!)",
   "main": "dist/commonjs/index.js",
   "module": "dist/mjs/index.js",
-  "typings": "dist/index.d.ts",
+  "typings": "dist/mapFlip.d.ts",
   "scripts": {
     "test": "jest",
     "build": "npm run build:commonjs && npm run build:mjs",
